@@ -48,7 +48,7 @@ CopyTechieSeller/
 Installation
 
 Clone the repository:
-Copygit clone https://github.com/yourusername/TechieSeller.git
+Copygit clone https://github.com/Emmanuelbolaji/TechieSeller.git
 cd TechieSeller
 
 Create a virtual environment and activate it:
