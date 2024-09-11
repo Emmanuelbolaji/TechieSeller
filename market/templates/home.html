@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}
+    TechieSeller - Home
+{% endblock %}
+
+{% block content %}
+<div class="home-container">
+	<div class="hero-section">
+		<div class="cover-image">
+			<img src="{{ url_for('static', filename='images/market.PNG') }}" alt="TechieSeller Cover Image">
+		</div>
+	</div>
+
+	<div class="hero-content">
+		<h1 class="project-name">TechieSeller</h1>
+		<p class="project-description">A simple portfolio web app simulating an online platform for buying tech gadgets</p>
+		<a href="{{ url_for('market_page') }}" class="cta-button">Explore the Market</a>
+	</div>
+	<div class="key-features">
+		<h2>Key Features</h2>
+		<div class="features-grid">
+			<div class="">
+				<div class="feature-image">
+					<!-- Replace with your actual image URL -->
+					<img src="{{ url_for('static', filename='images/register.PNG') }}" alt="Secure Authentication">
+				</div>
+				<h3>Secure User Authentication</h3>
+				<p>Create your  account with a robust registratem. Enjoy safe re logins to access your personalized shopping experience.</p>
+			</div>
+			<div class="feature">
+				<div class="feature-image">
+					<!-- Replace with your actual image URL -->
+					<img src="{{ url_for('static', filename='images/market.PNG') }}" alt="Product Listing">
+				</div>
+				<h3>Diverse Product Listing</h3>
+				<p>Browse through the extensive catalog of tech products.</p>
+			</div>
+			<div class="feature">
+				<div class="feature-image">
+					<!-- Replace with your actual image URL -->
+					<img src="{{ url_for('static', filename='images/paystack.PNG') }}" alt="Payment Integration">
+				</div>
+				<h3>Seamless Payment Integration</h3>
+				<p>Experience hassle-free transactions with the integrated Paystack payment system. Enjoy secure and swift checkouts for the tech purchases.</p>
+			</div>
+		</div>
+	</div>
+	<div class="about-section">
+		<h2>About TechieSeller</h2>
+		<div class="about-content">
+			<h3>spiration</h3>
+			<p>This portfolio prs born out of my original interest as an agriculture entuthiast ay build an application that could serve as a medium for buying and selling agricultural products, so I decided to use this Project as a small scale but yet a first and important step to get the Knowledge required to bring this vision to reality. Instead of agricultural products I decided to use tech gadgets in the spirit of the current program I am in. In the future I hope to create an even bettter market app for my own business with more robust functionalities and User Experience than this. Special Shoutout to ALX for this amazing opportunity to learn and grow.</p>
+			<ul class="team-list">
+				<li>
+					<strong>Osundiran Bolaji</strong> - ALX SE Student
+					<div class="social-links">
+						<a href="#">LinkedIn</a> |
+						<a href="#">GitHub</a> |
+						<a href="#" target="_blank">Twitter</a>
+					</div>
+				</li>
+			</ul>
+			<h3>Project Repository</h3>
+			<p>Interested in the technical details of TechieSeller? Check out my <a href="#" target="_blank">GitHub repository</a> to explore the code behind this project.</p>
+		</div>
+	</div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{block title %}
+    Confirm Purchase
+{% endbloc{% block content %}
+<div class="payment-container">
+	<h2>Confirm Purchase</h2>
+	    <div class="item-card">
+		    <h3 class="item-name">{{ item.name }}</h3>
+		    <p class="item-description">{{ item.description }}</p>
+		    <p class="item-price"><strong>Price: ₦{{ item.price }ong></p>
+		    <button type="button" class="payment-button" onclick="initiatePayment('{{ paystack_public_key }}', '{{ current_user.email_address }}', {{ item.price }}, {{ item.id }}, {{ current_user.id }}, '{{ url_for('payment_callback', item_id=item.id, _external=True) }}')">Pay Now</button>
+	    </div>
+</div>
+{% endblock %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/payment.css') }}">
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="{{ url_for('static', filename='js/paystack.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/initiate_payment.js') }}"></script>
+{% endblock %}

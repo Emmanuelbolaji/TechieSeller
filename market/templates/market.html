@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block title %}Market page{% endblock %}
+
+{% block content %}
+<div class="market-container">
+	<div class="available-items">
+		<h2>Available Items</h2>
+		<p>Click on Purchase to start the purchase process</p>
+
+		<div class="search-container">
+			<input type="text" id="searchInput" class="fancy-search" placeholder="Search items...">
+			<button class="search-button"><i class="fas fa-search"></i></button>
+		</div>
+		<p id="noMatchMessage" class="fancy-no-match" style="display: none;">No match found</p>
+		<table class="fancy-table">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Price</th>
+					<th>Barcode</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody id="itemsTableBody">
+				{% for item in items %}
+				<tr>
+					<td>{{ item.name }}</td>
+				        <td>₦{{ item.price }}</td>
+                                        <td>{{ item.barcode }}</td>
+					<td>
+						<a href="{{ url_for('payment', item_id=item.id) }}" class="btn btn-success btn-sm purchase-btn">
+							Purchase
+						</a>
+						<button class="btn btn-info btn-sm more-info-btn" 
+							data-item-name="{{ item.name }}" 
+							data-item-description="{{ item.description }}">
+							More Info
+						</button>
+					</td>
+				</tr>
+				{% endfor %)
+			</tbody>
+		</table>
+	</div>
+
+	<!-- Purchased Items section -->
+	<div class="purchased-items">
+	<h2>Purchased Items</h2>
+	<div class="purchased-items-content">
+		{% if current_user.is_authenticated %}
+		{% if owned_items %}
+		<ul class="fancy-list-group">
+			{% for owned_item in owned_items %}
+			<li>
+				{{ owned_item.name }
+				<span class="badge">₦{{ owned_item.price }}</span>
+			</li>
+			{% endfor %}
+		</ul>
+		{% else %}
+		<p>You don't own any items yet.</p>
+		{% endif %}
+		{% else %}
+		<p class="-view">Login to view chased items</p>
+		{% endif %}
+	</div>
+	</div>
+</div>
+
+{% include 'items_modals.html' %}
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script srcurl_for('static', filename='js/market.js') }}"></script>
+<script src="{{ url_for('static', filename='js/items_modals.js') }}"></script>
+{% endblock}
+
+
+
+
+
+				      
