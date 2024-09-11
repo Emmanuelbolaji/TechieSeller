@@ -1,0 +1,162 @@
+/* register.css */
+:root {
+	--primary-color: #ff0000;
+	--background-color: #ffffff;
+	--text-color: #000000;
+	--accent-color: #ff6666;
+	--shadow-color: rgba(255, 0, 0, 0.2);
+}
+
+.register-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: calc(100vh - var(--header-height));
+	background: linear-gradient(135deg, var(--background-color), #f8f8f8);
+	padding: 1rem;
+}
+
+.register-container h1 {
+	color: var(--primary-color);
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.register-form {
+	background-color: var(--background-color);
+	padding: 2rem;
+	border-radius: 10px;
+	box-shadow: 0 10px 30px var(--shadow-color);
+	width: 100%;
+	max-width: 450px;
+	text-align: center;
+	transition: transform 0.3s ease;
+}
+
+.register-form:hover {
+	transform: translateY(-5px);
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+	text-align: left;
+}
+
+.form-label {
+	display: block;
+	margin-bottom: 0.5rem;
+	color: var(--text-color);
+	font-weight: bold;
+}
+
+.form-control {
+	width: 95%;
+	padding: 0.75rem;
+	border: 2px solid #e0e0e0;
+	border-radius: 5px;
+	font-size: 1rem;
+	transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+	outline: none;
+	border-color: var(--primary-color);
+	box-shadow: 0 0 0 2px var(--shadow-color);
+}
+
+.btn {
+	background-color: var(--primary-color);
+	color: var(--background-color);
+	border: none;
+	padding: 0.75rem 1.5rem;
+	font-size: 1rem;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-top: 1rem;
+	width: 100%;
+}
+
+.btn:hover {
+	background-color: red;
+	border-radius: 10px;
+}
+
+.register-link {
+	margin-top: 1.5rem;
+	font-size: 0.9rem;
+}
+
+.register-link p {
+	margin-bottom: 0.5rem;
+}
+
+.register-link a {
+	color: var(--primary-color);
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+.register-link a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; transform: translateY(-20px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+.register-form {
+	animation: fadeIn 0.5s ease-out;
+}
+
+@media screen and (max-width: 480px) {
+	.register-container {
+		padding: 0.5rem;
+	}
+
+	.register-container h1 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.register-form {
+		padding: 1.5rem;
+	}
+
+	.form-control {
+		padding: 0.6rem;
+	}
+
+	.btn {
+		padding: 0.6rem 1.2rem;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.register-container h1 {
+		font-size: 1.3rem;
+	}
+
+	.register-form {
+		padding: 1rem;
+	}
+
+	.form-control {
+		padding: 0.5rem;
+	}
+
+	.btn {
+		padding: 0.5rem 1rem;
+		font-size: 0.9rem;
+
+	}
+}

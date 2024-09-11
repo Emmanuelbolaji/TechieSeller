@@ -1,0 +1,23 @@
+/* styles.css */
+
+:root {
+	--primary-color: #ff0000;
+	--secondary-color: #cc0000;
+	--background-color: #ffffff;
+	--text-color: #333333;
+	--accent-color: #f8f8f8;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	line-height: 1.6;
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
