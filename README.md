@@ -2,6 +2,7 @@ TechieSeller
 TechieSeller is a Flask-based web application for an online marketplace specialized in tech products. It provides a platform for users to buy and sell various tech items.
 Table of Contents
 
+Introduction
 Features
 Project Structure
 Installation
@@ -9,7 +10,15 @@ Usage
 Database
 Testing
 Contributing
+Related Projects
 License
+
+Introduction
+TechieSeller aims to create a user-friendly platform for tech enthusiasts to trade their gadgets and accessories. Whether you're looking to upgrade your setup or find a new home for your gently used tech, TechieSeller has got you covered.
+
+Deployed Site: TechieSeller Live
+Project Blog Article: Building TechieSeller: A Journey in Flask and E-commerce
+Author LinkedIn: Emmanuel Bolaji
 
 Features
 
@@ -71,6 +80,8 @@ Start the Flask development server:
 Copypython run.py
 
 Open a web browser and navigate to http://localhost:5000
+Register a new account or log in with existing credentials
+Browse the marketplace, add items to your cart, and complete purchases
 
 Database
 The application uses SQLite as the database, stored in instance/market.db. Database migrations are managed using Flask-Migrate and can be found in the migrations directory.
@@ -86,9 +97,19 @@ test_forms.py: Tests for form validation
 test_models.py: Tests for database models
 
 Contributing
+We welcome contributions to TechieSeller! Please follow these steps:
 
 Fork the repository
 Create a new branch (git checkout -b feature/AmazingFeature)
 Commit your changes (git commit -m 'Add some AmazingFeature')
 Push to the branch (git push origin feature/AmazingFeature)
 Open a Pull Request
+
+Please ensure your code adheres to our coding standards and includes appropriate tests.
+Related Projects
+
+TechBazaar - A similar marketplace for tech products built with Django
+GadgetSwap - A peer-to-peer platform for exchanging tech gadgets
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.

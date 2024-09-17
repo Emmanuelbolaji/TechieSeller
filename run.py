@@ -1,5 +1,10 @@
 from market import app
 
-#Checks if the run.py file has executed directly and not imported
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    """
+    Entry point for running the Flask application.
+    Ensures that the app only runs if the script is executed directly, 
+    not when imported as a module.
+    """
+    app.run(debug=False)

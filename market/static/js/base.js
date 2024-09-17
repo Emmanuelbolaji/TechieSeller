@@ -1,5 +1,12 @@
 // base.js
 
+/**
+ * Handles flash messages functionality.
+ *
+ * This script manages flash messages on the page by automatically hiding them
+ * after a set period and allowing users to close them manually.
+ */
+
 // Flash messages functionality
 document.addEventListener('DOMContentLoaded', function() {
 	// Automatically close flash messages after 5 seconds

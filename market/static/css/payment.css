@@ -1,4 +1,27 @@
-/* payment.css */
+/*
+    This CSS defines the styles for a payment interface with responsive design, hover effects, and smooth transitions.
+
+    General Styles:
+    - `.payment-container`: A centered container for payment elements with padding, a light background, rounded corners, and a drop shadow.
+    - `.payment-container h2`: Styled headings with text shadow for visual emphasis.
+
+    Item Card:
+    - `.item-card`: A card layout with a white background, padding, rounded corners, and a subtle drop shadow.
+    - `.item-name`, `.item-description`, and `.item-price`: Styles for the item details, emphasizing the name, description, and price. The price is styled in red for contrast.
+
+    Payment Button:
+    - `.payment-button`: A green button with rounded edges, smooth hover transitions, and a box shadow. It has disabled state styling for inactive buttons.
+    - Hover effect: The button turns white with a green border when hovered, with a shadow for a 3D effect.
+
+    Media Queries:
+    - `@media screen and (min-width: 480px)`: Adjusts font sizes and paddings for slightly larger screens.
+    - `@media screen and (min-width: 768px)`: Increases container width, padding, and font sizes for desktop views.
+
+    Additional States:
+    - `.payment-confirmed`: A class that changes the background color of elements to blue when a payment is confirmed.
+
+*/
+
 
 .payment-container {
 	max-width: 100%;

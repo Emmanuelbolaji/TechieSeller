@@ -1,4 +1,31 @@
-/* market.css */
+/*
+    This CSS file provides responsive styling for a marketplace interface with two sections: available items and purchased items.
+
+    Variables:
+    - Root variables define a color palette including primary (red), secondary (light red), accent (teal), background, text color, and header height.
+    
+    Structure:
+    - `.market-container`: A flex container for the marketplace layout. It adjusts for mobile (column) and desktop (row) views.
+    - `.available-items` & `.purchased-items`: Content sections for available and purchased items, with padding and scrollable overflow.
+
+    Typography & Layout:
+    - `h2`: Styles headers with uppercase, colored text, and a bottom border.
+    - `.search-container`: Relative positioning for a search bar with a search button.
+    - `.fancy-no-match`: Italicized text displayed when no items match the search.
+
+    Table Styling:
+    - `.fancy-table`: Defines a table for item listings with space between rows, colored headers, and hover effects on rows.
+    - Buttons: `.purchase-btn` & `.more-info-btn` are styled with consistent sizing, hover effects, and smooth transitions.
+
+    List Group:
+    - `.fancy-list-group` & `li`: A list of purchased items styled with padding, border, and hover effects.
+    - `.badge`: A small badge used to highlight the status of items.
+    
+    Responsiveness:
+    - The layout adjusts based on screen width. Above 768px, items are displayed side by side, with larger fonts and buttons.
+    - Hover effects for list items include subtle translations and box shadows for a polished UI experience.
+*/
+
 
 :root {
 	--primary-color: #ff0000;

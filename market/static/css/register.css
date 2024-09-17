@@ -1,4 +1,36 @@
-/* register.css */
+/*
+    This CSS defines the styles for a user registration page with a focus on responsive design and a modern look.
+
+    General Styles:
+    - `:root`: Defines CSS custom properties (variables) for colors, background, and shadow effects.
+
+    Registration Container:
+    - `.register-container`: A flex container centering the registration form, with a gradient background and padding.
+    - `.register-container h1`: Styled heading with primary color, large font size, uppercase text, and letter spacing.
+
+    Registration Form:
+    - `.register-form`: A card-like form with padding, rounded corners, and a shadow effect. It transforms slightly when hovered.
+    - `.form-group`: Margins and text alignment for form groups.
+    - `.form-label`: Block display for labels with margin and color.
+    - `.form-control`: Input fields with padding, border, and a transition effect for focus state.
+
+    Buttons:
+    - `.btn`: A button with primary color background, text color, padding, and rounded corners. It changes color and style on hover.
+
+    Links:
+    - `.register-link`: Styling for registration links, with font size and hover effects.
+
+    Animations:
+    - `@keyframes fadeIn`: Animation for fading in the form with a slight upward movement.
+    
+    Media Queries:
+    - `@media screen and (max-width: 480px)`: Adjustments for smaller screens, including padding and font sizes.
+    - `@media screen and (max-width: 320px)`: Further adjustments for very small screens, including font sizes and padding.
+
+    Overall, the CSS provides a clean, responsive design for a user registrati
+*/
+
+
 :root {
 	--primary-color: #ff0000;
 	--background-color: #ffffff;

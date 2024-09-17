@@ -1,4 +1,17 @@
-/* login.css */
+/*
+    This CSS file styles a responsive login form with smooth animations and interactive elements.
+
+    Summary:
+    - Root variables: Defines color scheme, including primary (red), background, text, accent, and shadow colors.
+    - Login container: Centers the form vertically and horizontally, with a gradient background.
+    - Login form: Provides a clean layout with padding, rounded corners, and a subtle shadow. Hover effect lifts the form slightly.
+    - Form elements: Includes labels, input fields with focus effects, error messages, and a submit button that changes on hover.
+    - Button: Red primary button with a hover effect that changes the background and slightly transforms the button.
+    - Register link: A link for registration styled with hover effects and smooth transitions.
+    - Fade-in animation: Applies a fade-in effect on the form when it loads, adding subtle movement.
+    Media Queries: Adjusts padding, font size, and button dimensions for small screens (max-width: 480px and 320px), ensuring responsiveness.
+*/
+
 
 :root {
 	--primary-color: #ff0000;

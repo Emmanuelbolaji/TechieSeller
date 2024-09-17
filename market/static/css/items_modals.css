@@ -1,4 +1,18 @@
-/* items_modals.css */
+/*
+    This CSS file styles a modal component, ensuring a visually appealing and responsive layout.
+    
+    Summary:
+    - Modal: Styles for a full-screen overlay modal with a transparent black background. Initially hidden and centered when displayed.
+    - Modal content: The modal box itself, which is centered on the screen with a white background, rounded corners, and box-shadow for depth.
+    - Close button: A bold, clickable "X" to close the modal, changing color when hovered or focused.
+    - Centered item name: A centered, bold, and red-colored title for items within the modal.
+    - Centered item name: A centered, bold, and red-colored title for items within the modal.
+    - Fancy description heading: A green, uppercase heading with a background gradient and shadow for visual emphasis.
+    - Fancy description: The main content description with a subtle gradient background, black left border, and hover effect that adds a slight movement.
+
+    Media Queries: Adjusts the size and font properties for larger screens (min-width: 768px), making the modal content wider and increasing font sizes for better readability on larger devices.
+*/ 
+
 
 .modal {
 	display: none;

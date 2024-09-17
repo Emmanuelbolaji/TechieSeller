@@ -1,4 +1,13 @@
-/* styles.css */
+/*
+    This CSS file defines the base styles for the entire website. 
+
+    - :root: Defines CSS variables for primary, secondary, background, text, and accent colors to maintain consistency.
+    - body: Sets the font family, line height, text color, and background color for the page.
+    - .container: Provides a responsive container with a maximum width of 1200px and horizontal padding to center and constrain the content.
+
+    Use these styles as a base and build upon them for specific components and pages.
+*/
+
 
 :root {
 	--primary-color: #ff0000;

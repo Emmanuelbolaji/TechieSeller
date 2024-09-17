@@ -1,3 +1,17 @@
+/*
+    This CSS file provides styles for a webpage with a sticky header, flash messages, and responsive design.
+
+    Summary:
+    - Root variables: Defines reusable colors and dimensions for the header in desktop and mobile views.
+    - Body styling: Sets global font properties, background color, and layout for the page with appropriate padding.
+    - Sticky header: A fixed header with a logo, navigation links, and a centered welcome message, ensuring visibility at all times.
+    - Navigation links: Styled to change color on hover, with smooth transitions.
+    - Flash messages: Styled blocks to show success or error notifications, with color-coded borders and an optional close button.
+    - Responsive layout: Adjusts the layout for smaller screens, including collapsing the navigation menu into a dropdown and adjusting font sizes and spacing.
+    Media Queries: Implements specific design changes for screens smaller than 768px, focusing on the header and navigation adjustments for mobile devices.
+*/
+
+
 :root {
 	--primary-color: #ff0000;
 	--background-color: #ffffff;

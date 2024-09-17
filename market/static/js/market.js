@@ -1,8 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
+	// Get references to DOM elements
 	const searchInput = document.getElementById('searchInput');
 	const itemsTableBody = document.getElementById('itemsTableBody');
 	const noMatchMessage = document.getElementById('noMatchMessage');
 
+	/**
+	* Filters table rows based on the search input value.
+	*/
 	searchInput.addEventListener('input', function() {
 		const searchTerm = this.value.toLowerCase();
 		const rows = itemsTableBody.getElementsByTagName('tr');
