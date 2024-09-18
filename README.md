@@ -83,6 +83,7 @@ Open a web browser and navigate to http://localhost:5000
 Register a new account or log in with existing credentials
 Browse the marketplace, add items to your cart, and complete purchases
 
+Access the page at https://emmanuelbolaji.pythonanywhere.com/
 Database
 The application uses SQLite as the database, stored in instance/market.db. Database migrations are managed using Flask-Migrate and can be found in the migrations directory.
 To create a new migration after modifying models:
